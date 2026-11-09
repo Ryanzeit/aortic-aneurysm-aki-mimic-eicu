@@ -35,7 +35,7 @@ The work was developed interactively in Google Colab. Paths follow the Colab lay
 
 ### Notes
 
-- Cell numbering in comments follows the interactive analysis session, so comments such as "paste back" or "requested by" refer to that session. The verification file `cell12_verification_checks.py` is separate from the add-on notebook's Cell 12 (baseline lookback).
+- Cell numbering in comments follows the interactive analysis session, so comments that mention a cell or a version refer to that session. The verification file `cell12_verification_checks.py` is separate from the add-on notebook's Cell 12 (baseline lookback).
 - The primary outcome is KDIGO creatinine-ratio AKI (peak at least 1.5 times baseline), with baseline = median creatinine 7 to 365 days before admission where available, otherwise the lowest value in the first 24 hours. The first-24-hour baseline is a sensitivity analysis.
 - Analyses are associational and post hoc; there was no registered protocol.
 
