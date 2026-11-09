@@ -1,0 +1,8 @@
+pandas
+numpy
+statsmodels
+patsy
+scipy
+duckdb
+comorbidipy
+matplotlib

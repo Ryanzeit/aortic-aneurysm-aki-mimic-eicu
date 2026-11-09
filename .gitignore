@@ -1,0 +1,10 @@
+# Never commit data. MIMIC-IV and eICU-CRD are credentialed PhysioNet resources.
+*.csv
+*.csv.gz
+*.parquet
+*.feather
+*.xlsx
+*.pkl
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
