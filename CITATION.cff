@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated manuscript and this archive."
+title: "Analysis code: open versus endovascular aortic aneurysm repair and acute kidney injury in intensive care (MIMIC-IV, eICU-CRD)"
+type: software
+license: MIT
+repository-code: "https://github.com/Ryanzeit/aortic-aneurysm-aki-mimic-eicu"
+authors:
+  - family-names: Zeitouny
+    given-names: Ryan
+  - family-names: Salman
+    given-names: Zane
+  - family-names: Salman
+    given-names: Samer G.
+# Add the senior author here once confirmed, before creating the Zenodo release.

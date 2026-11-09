@@ -1,6 +1,6 @@
 # Cell 16 (add-on, run AFTER Run all in the same session). CREATININE RANGE AND DUPLICATE CHECK. DESCRIPTIVE ONLY: no outcome model, no new estimate.
 # Why: RECORD 12.2 (data cleaning). The manuscript says creatinine was used as recorded, without plausibility limits or duplicate removal.
-# This cell only looks at the values. Aggregates only; counts under SMALL_CELL print as '<11'. Paste back ONLY this cell's output.
+# This cell only looks at the values. Aggregates only; counts under SMALL_CELL print as '<11'.
 say("\n=== CELL 16: creatinine range and duplicate check (descriptive; no outcome analysis) ===")
 v = cr.valuenum
 say("Creatinine values used in the analysis (item", CR_ITEM, "charted up to discharge, cohort admissions):", n_(len(v)), "| admissions with at least one:", n_(cr.hadm_id.nunique()))

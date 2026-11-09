@@ -1,9 +1,9 @@
-# Cell 15 (add-on, run AFTER Run all AND Cell 12 in the same session). MAIN-TEXT ANALYSES RE-RUN WITH THE HIERARCHY BASELINE. POST HOC, requested by Ryan 4 Nov 2026.
+# Cell 15 (add-on, run AFTER Run all AND Cell 12 in the same session). MAIN-TEXT ANALYSES RE-RUN WITH THE HIERARCHY BASELINE. POST HOC, added 4 Nov 2026.
 # Why: Cell 12 / R11 verified the hierarchy outcome (aki_hier: median creatinine 7-365 days before admission where it exists, otherwise the lowest value in the first 24 h).
-# Ryan chose to promote it to the PRIMARY outcome definition (Option A). This cell re-runs, on that outcome, only the analyses that stay in the main text.
+# It was promoted to the PRIMARY outcome definition. This cell re-runs, on that outcome, only the analyses that stay in the main text.
 # It adds NO new kinds of analysis: every model below already exists in the notebook on the old definition. Analyses that do not use the baseline
 # (absolute-rise criterion, dialysis, in-hospital death) are unchanged and are not repeated. Cells 13 and 14 are NOT needed.
-# Aggregates only; counts below SMALL_CELL are masked. Paste back ONLY this cell's output.
+# Aggregates only; counts below SMALL_CELL are masked.
 import patsy
 say("\n=== CELL 15: main-text analyses re-run on the HIERARCHY baseline outcome (post hoc) ===")
 need = [c_ for c_ in ['aki_hier', 'base_hier', 'base_prior', 'peak_all', 'aki'] if c_ not in d.columns]
@@ -25,7 +25,7 @@ def gcomp15(model, data):
 # ---- H1: the new primary ----
 say("\n--- New primary: AKI by the hierarchy baseline ---")
 m_h = fit(d, 'aki_h', T(), 'H1  PRIMARY (hierarchy baseline): modified Poisson RR, cluster by patient', 'poisson')
-if m_h is None: raise SystemExit("The H1 model failed; send me the MODEL FAILED line above.")
+if m_h is None: raise SystemExit("The H1 model failed; see the MODEL FAILED line above.")
 est_h, lo_h, hi_h = RESULTS[-1]['est'], RESULTS[-1]['lo'], RESULTS[-1]['hi']
 say("   (must equal P2 from Cell 12: 1.77 (1.41 to 2.22), 227 events)")
 fit(d, 'aki_h', T(), 'H1b Same covariates, logistic odds ratio (secondary)', 'logit')

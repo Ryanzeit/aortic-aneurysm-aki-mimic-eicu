@@ -88,4 +88,4 @@ j = 1; X1 = X.copy(); X1[:, j] = 1; X0 = X.copy(); X0[:, j] = 0
 rd = (np.exp(X1 @ b).mean() - np.exp(X0 @ b).mean()) * 100
 print(f"R10 standardized (adjusted) risk difference, point estimate: {rd:.1f} percentage points")
 o=df.approach.values=='open'; print(f"R10 crude risk difference, point estimate: {100*(y[o].mean()-y[~o].mean()):.1f} percentage points")
-print("\nNOTE: this does not re-derive the 795->740 exclusions. That needs icustays, procedures_icd, diagnoses_icd and the full creatinine table; ask me to write that check if you want it.")
+print("\nNOTE: this does not re-derive the 795->740 exclusions. That needs icustays, procedures_icd, diagnoses_icd and the full creatinine table; a separate check would be needed for that.")

@@ -64,4 +64,4 @@ fit(coh[~coh.patientunitstayid.isin(dissect)], base + " + comorb", "E5 excluding
 if 'hospitalid' in coh and coh.hospitalid.notna().all():
     print("Hospitals in analysed stays:", n_(coh.hospitalid.nunique()))
     fit(coh, base + " + comorb", "E6 same as E1, SE clustered by hospital", cluster='hospitalid')
-print("\nPaste this whole output. Next: the MIMIC location model (Cell 8) and the formal comparison.")
+print("\nNext: the MIMIC location model (Cell 8) and the formal comparison.")

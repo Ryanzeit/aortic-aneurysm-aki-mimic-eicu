@@ -1,4 +1,4 @@
-# Cell 12 (add-on, run AFTER Run all in the same session): VERIFICATION CHECKS. Aggregates only. Paste back ONLY this cell's output.
+# Cell 12 (add-on, run AFTER Run all in the same session): VERIFICATION CHECKS. Aggregates only.
 say("\n=== CELL 12: verification checks ===")
 # V1-V3: does the handling of the one admission with no baseline creatinine matter?
 say("Admissions with no baseline creatinine:", n_((d.base24.isna()).sum()))
