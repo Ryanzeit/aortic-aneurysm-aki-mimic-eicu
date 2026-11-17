@@ -11,4 +11,5 @@ authors:
     given-names: Zane
   - family-names: Salman
     given-names: Samer G.
-# Add the senior author here once confirmed, before creating the Zenodo release.
+  - family-names: Tripuraneni
+    given-names: Ajay
